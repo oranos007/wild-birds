@@ -1,0 +1,451 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: auto 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Navbar */
+.container .navbar {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.container .navbar ul,
+.container .navbar .sign{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .navbar .signin,
+.container .navbar .login {
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.container .navbar .login {
+  margin-right: 40px;
+  border: 2px solid tomato;
+}
+
+.container .navbar .signin:hover,
+.container .navbar .login:hover {
+  background-color: tomato;
+  border-radius: 20px;
+  transition-duration: 0.7s;
+}
+
+/* Navbar Menu */
+.container .navbar nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.container .navbar nav ul li a {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.container .navbar nav ul li a::after {
+  display: block;
+  content: '';
+  background-color: tomato;
+  height: 2px;
+  width: 0%;
+  margin-top: 1px;
+}
+
+.container .navbar nav ul li a:hover::after {
+  transition-duration: 0.9s;
+  width: 100%;
+}
+
+/* Logo */
+.container .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.container .logo h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.container .logo img {
+  cursor: pointer;
+}
+
+/* Cards */
+.container .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .cards .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container .cards .card img {
+  width: 100%;
+  height: auto;
+}
+
+.cards .card .text {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: 1;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  gap: 30px;
+}
+
+.in-text .button {
+  background-color: tomato;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  position: relative;
+  top: 30px;
+  left: 0;
+}
+.in-text .button:active {
+  background-color: #f85538;
+ 
+  }
+
+.cards .card .text .in-text h2 {
+  font-size: 45px;
+  color: white;
+  font-weight: 600;
+}
+
+.cards .card .text .in-text h2 span {
+  color: tomato;
+}
+
+.cards .card .text .in-text p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+  width: 80%;
+}
+
+
+
+
+
+
+
+.cards .card-1 .text .in-text p,
+.cards .card-7 .text p {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+.cards .card-7 .text h2 {
+  
+  font-size: 50px;
+  
+  color: white;
+  font-weight: 600;
+  
+  
+
+}
+.cards .card-7 .text  h2 span{
+    color: tomato;
+}
+.cards .card-7 .text p{
+    width: 60%;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.cards .card-7 .action-btns{
+  display: flex;
+  gap: 20px;
+}
+.cards .card-7 .text .action-button2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+  color: white;
+  padding: 10px 35px;
+  width: fit-content;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  
+  
+}
+.cards .card-7 .text .action-button2:active,
+.cards .card-7 .text .action-button1:active {
+  background-color: #f85538;
+ 
+  }
+.cards .card-7 .text .action-button3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid tomato;
+  color: #000000;
+  padding: 10px 35px;
+  width: fit-content;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  
+  
+}
+.cards .card-7 .text .action-button3:hover{
+  
+  color: #ffffff;
+  background-color: tomato;
+transition-duration: 0.4s;
+  
+  
+}
+
+
+
+.container .cards .blank-card {
+  width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    text-align: center;}
+
+.container .cards .blank-card h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container .cards .blank-card h2 span {
+  color: tomato;
+}
+
+.container .cards .blank-card p {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.container .cards .blank-card .action-button1 {
+  background-color: tomato;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.container .cards .blank-card .action-button1:active {
+  background-color: #f85538;
+ 
+}
+
+.cards .card-6 img {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* Back to Top Button */
+.top{
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh);
+  z-index: 100000;
+  
+}
+
+.top svg {
+  width: 40px;
+  fill: tomato;
+}
+
+.top svg:hover {
+  transform: scale(1.1);
+  fill: #ff8888;
+}
+
+.top svg:active {
+  transform: scale(1.2);
+  fill: #feb9b9;
+}
+
+
+
+.apps{
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+
+  .cards .card .text .in-text h2 {
+    font-size: 24px;
+  }
+
+  .cards p {
+    display: none;
+  }
+
+
+
+  .container .cards .blank-card h2 {
+    font-size: 28px;
+  }
+
+  .container .cards .blank-card p {
+    font-size: 14px;
+    width: 90%;
+  }
+  
+.container .in-text{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+.container .cards .text {
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .container .navbar .signin,
+  .container .navbar .login {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .container .logo h3 {
+    font-size: 16px;
+  }
+  .container .navbar {
+    font-size: 80%;
+    padding: 0;
+  }
+  .container .logo {
+    padding: 0;
+  }
+
+  .in-text .button {
+   scale: 0.8;
+    top: 10px;
+    left: -15px;
+  }
+  .container .cards .blank-card {
+   
+      height: 260px;
+  }
+  
+  .container .cards .blank-card h2 {
+    font-size: 25px;
+  }
+  
+  .container .cards .card-7 h2 {
+    font-size: 25px;
+  text-align: center;
+  }
+  .container .cards .card-7 img {
+    filter: blur(2px);
+  }
+  .container .cards .action-btns {
+    scale: 0.7;
+  }
+  .container .cards .apps {
+    margin-top: 10px;
+    scale: 0.9;
+  }
+  .container .navbar ul{
+  gap: 0px;
+  
+}
+.top{
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh);
+  z-index: 100000;
+  
+}
+.container .navbar .login {
+  margin-right: 10px;
+}
+}
